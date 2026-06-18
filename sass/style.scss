@@ -1,0 +1,22 @@
+//utilities
+@use "utilities/variables";
+@use "utilities/mixin";
+//base
+@use "base/reset";
+//components
+@use "components/buttons";
+@use "components/cards";
+//pages
+@use "pages/inicio";
+@use "pages/nosotros";
+@use "pages/especialidades";
+@use "pages/contacto";
+@use "pages/turnos";
+//layout
+@use "layout/mq_tablet";
+@use "layout/mq_desktop";
+@use "layout/header";
+@use "layout/footer";
+
+
+

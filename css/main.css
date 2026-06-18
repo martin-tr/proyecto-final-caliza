@@ -1,27 +1,24 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-header{
-    background-color: whitesmoke;
-    display: flex;
-    /* Llevo los elementos img y nav a los extremos de eje horizontal */
-    justify-content: space-between;
-    /* alineo los items al centro */
-    align-items: center;
-    /* aplico margen de lado derecho (o margin-right en el ul) */
-    padding-right: 30px;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-header img{
-    width: 20%;
+header {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 30px;
+}
+header img {
+  width: 20%;
+}
+header nav ul {
+  list-style: none;
+  color: rgb(199, 143, 199);
+  display: flex;
+  gap: 1rem;
+  margin-right: 30px;
 }
 
-header nav ul{
-   /* saco biñetas */
-    list-style: none;
-    color: rgb(199, 143, 199);
-    display: flex;
-    gap:1rem;
-    margin-right: 30px;
-}
+/*# sourceMappingURL=main.css.map */

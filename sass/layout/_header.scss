@@ -1,0 +1,23 @@
+@use "../utilities/variables" as*;
+
+header {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+
+    img {
+        width: 20%;
+    }
+
+    nav {
+        ul {
+            list-style: none;
+            color: rgb(199, 143, 199);
+            display: flex;
+            gap: 1rem;
+            margin-right: 30px;
+        }
+    }
+}

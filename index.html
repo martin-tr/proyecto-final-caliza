@@ -6,24 +6,33 @@
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- 1. Preconectar con los servidores de Google Fonts para mejorar la velocidad (SEO/Performance) -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <!-- 2. Cargar la tipografía Unbounded (Pesos: 300 Light y 400 Regular) -->
+    <link href="https://googleapis.com/css2?family=Unbounded:wght@300;400&display=swap" rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" href="css/main.css">
     <title>Caliza</title>
 </head>
 <body>
-    <header>
-        <img src="img/MUTA-SIMPLE-COLOR.png" alt="">
-        <nav>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Inmersivas</a></li>
-                <li><a href="">Retiros</a></li>
-                <li><a href="">Equipo</a></li>
-                <li><a href="">Comunidad</a></li>
-            </ul>
-        </nav>
-    </header>
+    <header class="header-caliza">
+    <!-- Logotipo y Nombre comercial -->
+    <div class="header-caliza__brand">
+        <!-- Reemplazar con tu archivo de logo cuando lo exportes -->
+        <img src="img/Isologotipo-Perfil-IG-Positivo.webp" alt="Logotipo de Caliza Consultorios" class="header-caliza__logo">
+    </div>
+    <!-- Menú de navegación semántico -->
+    <nav class="header-caliza__nav" aria-label="Navegación principal">
+        <ul class="header-caliza__menu">
+            <li class="header-caliza__item"><a href="index.html" class="header-caliza__link">Inicio</a></li>
+            <li class="header-caliza__item"><a href="pages/nosotros.html" class="header-caliza__link header-caliza__link--active">Nosotros</a></li>
+            <li class="header-caliza__item"><a href="pages/especialidades.html" class="header-caliza__link">Especialidades</a></li>
+            <li class="header-caliza__item"><a href="pages/turnos.html" class="header-caliza__link">Turnos</a></li>
+            <li class="header-caliza__item"><a href="pages/contacto.html" class="header-caliza__link">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
     <main>
 
     </main>
