@@ -1,24 +1,151 @@
-* {
-  margin: 0;
-  padding: 0;
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    /* sirve para incluir el padding y el border dentro del ancho (width) y alto (height) totales de un elemento, evitando que aumenten su tamaño final.  */
+    box-sizing: border-box;
+    font-family: 'Unbounded', 'Montserrat', 'Helvetica Neue', sans-serif;
 }
 
-header {
-  background-color: whitesmoke;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-right: 30px;
+  /* estilos generales */
+body{
+    background-color: #F1F1F1;
+  }
+  /* estilos del header */
+
+header{
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30px; /* Ejemplo de altura */
+  z-index: 1000; /* Asegura que siempre esté por encima del resto del contenido */
 }
-header img {
-  width: 20%;
-}
-header nav ul {
-  list-style: none;
-  color: rgb(199, 143, 199);
-  display: flex;
-  gap: 1rem;
-  margin-right: 30px;
+.navbar-brand img{
+  height: 180px;       /* Cambiá este valor para ajustar el tamaño */
+  width: auto;        /* Evita que la imagen se deforme */
+  display: block;
 }
 
-/*# sourceMappingURL=main.css.map */
+  header nav ul{
+    font-family: 'Unbounded', 'Montserrat', 'Helvetica Neue', sans-serif;
+    font-weight: 500;       /* Equivale al estilo 'Light' del manual */
+    font-size: 14px;        /* Tamaño ideal y estilizado para menús */
+    text-transform: uppercase; /* Opcional: En mayúsculas resalta el estilo geométrico */
+    letter-spacing: 1px;    /* Un pequeño espacio entre letras mejora la lectura */
+    list-style: none;
+    display: flex;
+    gap: 0.6rem;
+    margin-right: 0.8rem;
+  } 
+   
+  header nav div div ul li .color-item{
+    color: #23472D;
+    transition: color 0.3s ease;
+  }
+
+
+  header nav div div ul li .color-item:hover{
+    color: #B8D3D1 ;
+    
+  }
+
+  /* estilos de main */
+
+main{
+  margin-top: 100px; 
+  /* me adapta las imagnes a la pantalla y elimino el scroll */
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  /* no indico px porque dependera del contenido de la imagen */
+  grid-template-rows: repeat(3, 25%);
+  row-gap: 1rem;
+  padding: 1rem;
+  /* centrar el contenido con grid */
+  align-content: center;
+}
+/* pantallas adaptadas a su div contenedor - evito scroll lateral */
+main div img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* oculto para mobile la vista esta dos imagenes  */
+  main .img-dos, main .img-cinco{
+    display: none;
+  }
+  main .img-cuatro{
+    grid-row: 2;
+  }
+
+  footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #F1F1F1; /* Fondo oscuro para el footer */
+    color: #23472D;
+}
+
+.redes-sociales {
+    margin-bottom: 1rem;
+}
+
+.redes-sociales a {
+    color: #23472D;
+    font-size: 1.8rem; /* Tamaño de los iconos */
+    margin: 0 15px; /* Espaciado entre iconos */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.redes-sociales a:hover {
+    color: #B8D3D1; /* Cambia a color azul al pasar el cursor */
+    transform: translateY(-3px); /* Pequeño efecto de elevación */
+}
+
+/* MEDIA QUERIS - Para tablet - ver medidas de dispositivos */
+
+@media screen and (min-width: 768px) {
+  header{
+    justify-content: center;
+  }
+
+  main{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 40%);
+    column-gap: 1rem;
+  }  
+}
+
+/* media queris - para desktop */
+
+@media screen and (min-width: 1024px) {
+  main{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 30% 35% 30%;
+  }
+
+  main .img-dos, main .img-cinco{
+    display: block;
+  }
+  main .img-uno, main .img-tres{
+    grid-row: span 2;
+  }
+
+  main .img-cuatro{
+    grid-column: 2 / 3;
+    /* o span1 */
+  }
+
+  main .img-cinco{
+    grid-column: span 3;
+    /* o = 1 / 4 */
+  }
+}
+
+  @media (min-width: 992px){
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+}
+
