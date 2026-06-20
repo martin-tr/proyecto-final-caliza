@@ -18,11 +18,18 @@ header{
   top: 0;
   left: 0;
   width: 100%;
-  height: 30px; /* Ejemplo de altura */
+  height: 0; /* Ejemplo de altura */
   z-index: 1000; /* Asegura que siempre esté por encima del resto del contenido */
 }
+.header-caliza .navbar {
+    padding-top: 0.5rem;    /* Reducí este valor a tu gusto */
+    padding-bottom: 0.5rem; /* Reducí este valor a tu gusto */
+}
+.container.fluid{
+  
+}
 .navbar-brand img{
-  height: 180px;       /* Cambiá este valor para ajustar el tamaño */
+  height: 150px;       /* Cambiá este valor para ajustar el tamaño */
   width: auto;        /* Evita que la imagen se deforme */
   display: block;
 }
@@ -53,7 +60,7 @@ header{
   /* estilos de main */
 
 main{
-  margin-top: 100px; 
+  margin-top: 190px; 
   /* me adapta las imagnes a la pantalla y elimino el scroll */
   height: 80vh;
   display: grid;
