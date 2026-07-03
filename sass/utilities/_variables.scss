@@ -11,3 +11,22 @@ $color-oscuro-texto:    #1A1A1A; // Para asegurar la accesibilidad/contraste
 // Tipografías
 $font-logo:    'Alluring', cursive; 
 $font-contenido:   'Unbounded', sans-serif;
+
+
+:root {
+  --verde-principal: #23472D;   /* R:35 G:71 B:45 */
+  --arena-suave: #F8E4C1;       /* R:248 G:228 B:193 */
+  --celeste-caliza: #B8D3D1;    /* R:184 G:211 B:209 */
+  --gris-secundario: #F1F1F1;   /* R:241 G:241 B:241 */
+  --blanco: #FFFFFF;
+} 
+
+main.caliza-specialties {
+  --verde-principal: #23472D;
+  --arena-suave: #F8E4C1;
+  --celeste-caliza: #B8D3D1;
+  --gris-secundario: #F1F1F1;
+  --blanco: #FFFFFF;
+  --texto-oscuro: #333333;
+  --texto-suave: #555555;
+}
