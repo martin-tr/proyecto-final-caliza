@@ -86,31 +86,6 @@ main .img-cuatro {
   grid-row: 2;
 }
 
-/* ESTILOS GENERALES DEL FOOTER */
-
-footer {
-  text-align: center;
-  padding: 2rem;
-  background-color: #F1F1F1;
-  color: #23472D;
-}
-
-.redes-sociales {
-  margin-bottom: 1rem;
-}
-
-.redes-sociales a {
-  color: #23472D;
-  font-size: 1.8rem; /* Tamaño de los iconos */
-  margin: 0 15px; /* Espaciado entre iconos */
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.redes-sociales a:hover {
-  color: #B8D3D1; /* Cambia a color azul al pasar el cursor */
-  transform: translateY(-3px); /* Pequeño efecto de elevación */
-}
-
 /* mq tablet */
 @media screen and (min-width: 768px) {
   header {
@@ -155,6 +130,33 @@ footer {
     justify-content: flex-end;
   }
 }
+
+/* ESTILOS GENERALES DEL FOOTER */
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #F1F1F1;
+  color: #23472D;
+}
+
+.redes-sociales {
+  margin-bottom: 1rem;
+}
+
+.redes-sociales a {
+  color: #23472D;
+  font-size: 1.8rem; /* Tamaño de los iconos */
+  margin: 0 15px; /* Espaciado entre iconos */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.redes-sociales a:hover {
+  color: #B8D3D1; /* Cambia a color azul al pasar el cursor */
+  transform: translateY(-3px); /* Pequeño efecto de elevación */
+}
+
+
 
 /* ESTILOS PESTAÑA NOSOTROS */
 

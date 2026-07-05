@@ -1,6 +1,6 @@
 @use "../utilities/variables" as*;
 
-header {
+$header: header {
     background-color: whitesmoke;
     display: flex;
     justify-content: space-between;

@@ -1,4 +1,121 @@
+//USE
+@use "utilities/variables" as*;
 
+/*reset general*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/*body general*/
+body {
+    background-color: $color-gris-secundario;
+}
 
+/*header general*/
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 1000;
+    margin-bottom: 20px;
+}
 
+.header-caliza .navbar {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.navbar-brand {
+    img {
+        height: 190px;
+        width: auto;
+        display: block;
+    }
+}
+
+header {
+    nav {
+        ul {
+            font-family: $font-contenido;
+            font-weight: 500;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            list-style: none;
+            display: flex;
+            gap: 0.6rem;
+            margin-right: 0.8rem;
+        }
+    }
+}
+
+header {
+    nav {
+        div {
+            div {
+                ul {
+                    li {
+                        .color-item {
+                            color: $color-verde-principal;
+                            transition: color 0.3s ease;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+header {
+    nav {
+
+        div {
+            div {
+                ul {
+                    li {
+
+                        .color-item:hover {
+                            color: $color-celeste-caliza;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* PAGINA PRINCIPAL */
+main {
+    margin-top: 80px;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 25%);
+    row-gap: 1rem;
+    padding: 1rem;
+    align-content: center;
+    padding: 20px;
+}
+
+/* pantallas adaptadas a su div contenedor - evito scroll lateral */
+main {
+    div {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+/* oculto para mobile la vista esta dos imagenes  */
+main .img-dos,
+main .img-cinco {
+  display: none;
+}
+
+main .img-cuatro {
+  grid-row: 2;
+}
