@@ -20,7 +20,7 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- css -->
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/migracion.css">
     <title>Nosotros</title>
 </head>
 
@@ -46,7 +46,7 @@
                             <a class="nav-link color-item" href="especialidades.html">Especialidades</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link color-item" href="turnos.html">Turnos</a>
+                            <a class="nav-link color-item" href="convenios.html">Convenios</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link color-item" href="contacto.html">Contacto</a>
@@ -58,18 +58,37 @@
     </header>
 
     <main class="nosotros-container">
-        <div class="nosotros-imagen">
-            <!-- Reemplaza 'ruta-de-tu-imagen.jpg' por el nombre de tu archivo -->
-            <img src="../img/img-odontologa.png" alt="Equipo médico del consultorio">
-        </div>
 
-        <div class="nosotros-texto">
-            <h1>Sobre Nosotros</h1>
-            <p>Bienvenidos a nuestro centro odontológico y médico. Nos dedicamos a ofrecer atención de salud integral
-                con un equipo de profesionales altamente calificados y tecnología de vanguardia.</p>
-            <p>Nuestro compromiso es brindar un ambiente cálido, seguro y de confianza para el cuidado de toda tu
-                familia, priorizando siempre tu bienestar y comodidad.</p>
-        </div>
+        <!-- Primera sección: Imagen izquierda, Texto derecha -->
+        <section class="nosotros-seccion">
+            <div class="nosotros-imagen">
+                <img src="../img/img-odontologa.png" alt="Equipo médico del consultorio">
+            </div>
+            <div class="nosotros-texto">
+                <h1>Sobre Nosotros</h1>
+                <p>Bienvenidos a nuestro centro odontológico y médico. Nos dedicamos a ofrecer atención de salud
+                    integral con un equipo de profesionales altamente calificados y tecnología de vanguardia.</p>
+                <p>Nuestro compromiso es brindar un ambiente cálido, seguro y de confianza para el cuidado de toda tu
+                    familia, priorizando siempre tu bienestar y comodidad.</p>
+            </div>
+        </section>
+
+        <!-- Segunda sección: Texto izquierda, Imagen derecha (Se invierte con CSS) -->
+        <section class="nosotros-seccion nosotros-invertido">
+            <div class="nosotros-imagen">
+                <img src="../img/img-uno-consul-celeste.jpg" alt="Consultorio médico">
+            </div>
+            <div class="nosotros-texto">
+                <h1>Nuestros Consultorios</h1>
+                <p>Nuestros espacios están diseñados para ofrecerte la máxima comodidad desde el primer momento.
+                    Contamos con consultorios luminosos, climatizados y pensados para que tu visita sea una experiencia
+                    relajante, cercana y libre de estrés.</p>
+                <p>Equipamos cada ambiente con tecnología de vanguardia para garantizar diagnósticos precisos y
+                    tratamientos eficientes, cumpliendo estrictamente con los más altos estándares de higiene y
+                    bioseguridad para tu tranquilidad.</p>
+            </div>
+        </section>
+
     </main>
 
 
@@ -84,7 +103,7 @@
             <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i
                     class="fa-brands fa-linkedin"></i></a>
         </div>
-        <p>&copy; 2026 Mi Sitio Web. Todos los derechos reservados.</p>
+        <p>&copy; 2026 Caliza Consultorios - Todos los derechos reservados.</p>
     </footer>
 
     <!-- link de JS -->
