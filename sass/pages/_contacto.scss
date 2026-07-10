@@ -1,0 +1,114 @@
+@use "../utilities/variables" as *;
+
+/*pagina - contacto*/
+.main-formulario {
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+
+.contact-form {
+  font-family: $font-contenido;
+  font-weight: 300;
+  background-color: $color-3;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px $color-12;
+  width: 100%;
+  max-width: 550px;
+  margin: 40px auto;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: $color-4;
+  box-sizing: border-box;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 15px;
+
+  h2 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: $color-1;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+}
+
+.subtitle {
+  font-size: 0.85rem;
+  color: $color-4;
+  line-height: 1.5;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  label {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: $color-1;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  input,
+.form-group textarea {
+    font-family: $font-contenido;
+    font-weight: 300;
+    font-size: 0.9rem;
+    padding: 14px;
+    border: 2px solid $color-2;
+    border-radius: 8px;
+    background-color: $color-3;
+    color: $color-4;
+    outline: none;
+    transition: all 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  input::placeholder,
+.form-group textarea::placeholder {
+    color: $color-13;
+    font-size: 0.85rem;
+  }
+
+  input:focus,
+.form-group textarea:focus {
+    border-color: $color-1;
+    background-color: $color-14;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+}
+
+.btn-submit {
+  font-family: $font-contenido;
+  font-weight: 400;
+  font-size: 0.95rem;
+  background-color: $color-1;
+  color: $color-3;
+  padding: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease,
+    transform 0.1s ease;
+  margin-top: 10px;
+  width: 100%;
+
+  &:hover {
+    background-color: $color-11;
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+}

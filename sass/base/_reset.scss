@@ -1,6 +1,13 @@
 @use "../utilities/variables" as*;
 
-*{
-    margin: 0;
-    padding: 0;
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+/*estilos generales*/
+body {
+  background-color: $color-5;
+}
+

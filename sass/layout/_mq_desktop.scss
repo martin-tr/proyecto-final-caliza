@@ -1,0 +1,80 @@
+@use "../utilities/variables" as *;
+
+/*mq inicio desktop*/
+@media screen and (min-width: 1024px) {
+  main {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 30% 35% 30%;
+
+    .img-dos,
+  main .img-cinco {
+      display: block;
+    }
+
+    .img-uno,
+  main .img-tres {
+      grid-row: span 2;
+    }
+
+    .img-cuatro {
+      grid-column: 2 / 3;
+    }
+
+    .img-cinco {
+      grid-column: span 3;
+    }
+  }
+}
+
+/*mq-desktop nosotros*/
+@media (min-width: 1024px) {
+  .nosotros-container {
+    max-width: 1200px;
+    gap: 60px;
+    margin-top: 80px;
+  }
+
+  .nosotros-seccion {
+    gap: 50px;
+  }
+}
+
+/*mq-desktop especialidades*/
+@media (min-width: 1024px) {
+  .grid-especialidades {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .especialidades-main {
+    padding: 60px 20px;
+  }
+
+  .card-especialidad:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/*mq-desktop convenios*/
+@media (min-width: 1024px) {
+  .convenios-main {
+    padding: 60px 20px;
+  }
+
+  .grid-convenios {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+  }
+
+  .card-convenio {
+    transition: transform 0.2s ease,
+      box-shadow 0.2s ease;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+      border-color: $color-9;
+    }
+  }
+}

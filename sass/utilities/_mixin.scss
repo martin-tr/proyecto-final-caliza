@@ -1,0 +1,8 @@
+//mixin grilla - home
+@mixin grilla($colum, $row){
+    grid-template-columns: $colum;
+    grid-template-rows: $row;
+    row-gap: 1rem;
+    padding: 1rem;
+    align-content: center;
+}

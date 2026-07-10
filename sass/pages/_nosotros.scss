@@ -1,0 +1,35 @@
+@use "../utilities/variables" as *;
+
+/*pagina - nosotros*/
+.nosotros-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px;
+  height: auto;
+  margin-top: 60px;
+}
+
+.nosotros-seccion {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.nosotros-texto h1 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: $color-1;
+}
+
+.nosotros-imagen img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.nosotros-texto {
+  text-align: left;
+  color: $color-8;
+}

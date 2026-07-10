@@ -1,0 +1,26 @@
+@use "../utilities/variables" as *;
+
+/*Estilos del footer*/
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: $color-5;
+  color: $color-1;
+}
+
+.redes-sociales {
+  margin-bottom: 1rem;
+
+  a {
+    color: $color-1;
+    font-size: 1.8rem;
+    margin: 0 15px;
+    transition: color 0.3s ease,
+    transform 0.3s ease;
+  }
+
+  a:hover {
+    color: $color-2;
+    transform: translateY(-3px);
+  }
+}

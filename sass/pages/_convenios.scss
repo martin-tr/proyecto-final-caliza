@@ -1,0 +1,74 @@
+@use "../utilities/variables" as *;
+
+/*pagina - convenios*/
+.convenios-main {
+  margin-top: 80px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.titulo-seccion {
+  font-family: $font-contenido;
+  text-align: center;
+  color: $color-7;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.subtitulo-seccion {
+  font-family: $font-contenido;
+  text-align: center;
+  color: $color-7;
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  line-height: 1.5;
+}
+
+.grid-convenios {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.card-convenio {
+  background-color: $color-3;
+  border: 1px solid $color-6;
+  border-radius: 8px;
+  padding: 20px 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px $color-2;
+}
+
+.logo-placeholder {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: $color-1;
+  margin-bottom: 10px;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-obra-social {
+  max-width: 100%;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.plan-info {
+  font-size: 0.85rem;
+  color: $color-10;
+  margin: 0;
+}
