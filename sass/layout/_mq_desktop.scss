@@ -1,16 +1,24 @@
 @use "../utilities/variables" as *;
 
-/*mq inicio desktop*/
+/*mq-desktop inicio*/
 @media screen and (min-width: 1024px) {
   main {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 30% 35% 30%;
 
-    .img-dos,.img-cinco {
+    .img-dos {
       display: block;
     }
 
-    .img-uno,.img-tres {
+    .img-cinco {
+      display: block;
+    }
+
+    .img-uno {
+      grid-row: span 2;
+    }
+
+    .img-tres {
       grid-row: span 2;
     }
 
